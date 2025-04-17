@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison d'Élégance | Est. 1895</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Custom Cursor Elements -->
+  <div class="cursor"></div>
+  <div class="cursor-trail"></div>
+
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loading-animation">
+      <div class="loading-logo">
+        Maison d'Élégance
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav-container">
+    <nav>
+      <div class="logo">Maison d'Élégance</div>
+      <ul class="nav-links">
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#bespoke">Bespoke Experience</a></li>
+        <li><a href="#heritage">Heritage</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <!-- Replace with a real video when available -->
+      <!-- For now using a high-quality image as fallback -->
+      <source src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1920&auto=format&fit=crop" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Crafting Legends Since 1895</h1>
+      <p class="hero-subtitle">Where heritage meets avant-garde—crafting wearable art for the 0.001%</p>
+      <a href="#collections" class="hero-btn">Explore</a>
+    </div>
+  </section>
+
+  <!-- Collections Section -->
+  <section id="collections" class="collections">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Collections</h2>
+        <p class="section-subtitle">Handcrafted masterpieces, limited to 50 pieces per year.</p>
+      </div>
+      
+      <div class="collection-grid">
+        <div class="collection-item" data-collection="royal-heritage">
+          <div class="collection-badge">Piece No. 03/50</div>
+          <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=500&auto=format&fit=crop" alt="Royal Heritage Collection" class="collection-img">
+          <div class="collection-overlay">
+            <h3 class="collection-title">Royal Heritage</h3>
+            <p class="collection-info">Hand-tailored wool sourced from the highest regions of the Andes.</p>
+            <a href="#" class="view-btn" data-modal="collection-1">View Details</a>
+          </div>
+        </div>
+        
+        <div class="collection-item" data-collection="avant-noir">
+          <div class="collection-badge">Piece No. 12/50</div>
+          <img src="https://images.unsplash.com/photo-1548624313-0396284da89c?q=80&w=500&auto=format&fit=crop" alt="Avant Noir Collection" class="collection-img">
+          <div class="collection-overlay">
+            <h3 class="collection-title">Avant Noir</h3>
+            <p class="collection-info">Exclusive silk blend with 24K gold thread accents.</p>
+            <a href="#" class="view-btn" data-modal="collection-2">View Details</a>
+          </div>
+        </div>
+        
+        <div class="collection-item" data-collection="imperial-legacy">
+          <div class="collection-badge">Piece No. 07/50</div>
+          <img src="https://images.unsplash.com/photo-1495385794356-15371f348c31?q=80&w=500&auto=format&fit=crop" alt="Imperial Legacy Collection" class="collection-img">
+          <div class="collection-overlay">
+            <h3 class="collection-title">Imperial Legacy</h3>
+            <p class="collection-info">Cashmere sourced from Mongolia, designed for royalty.</p>
+            <a href="#" class="view-btn" data-modal="collection-3">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bespoke Experience Section -->
+  <section id="bespoke" class="bespoke">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Bespoke Experience</h2>
+        <p class="section-subtitle">A personalized journey into the world of haute couture.</p>
+      </div>
+      
+      <div class="bespoke-content">
+        <div class="bespoke-text">
+          <h3 class="bespoke-title">Tailored to Perfection</h3>
+          <p class="bespoke-description">Every Maison d'Élégance piece is meticulously crafted to your exact specifications. Our master artisans dedicate over 500 hours to create each garment, ensuring unparalleled quality and fit.</p>
+          
+          <div class="bespoke-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">✓</div>
+              <p class="highlight-text">Personal consultation with our design director</p>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">✓</div>
+              <p class="highlight-text">Access to rare and exclusive fabrics</p>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">✓</div>
+              <p class="highlight-text">Multiple fittings in our private ateliers</p>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">✓</div>
+              <p class="highlight-text">Lifetime maintenance and care service</p>
+            </div>
+          </div>
+          
+          <form class="bespoke-form">
+            <div class="form-group">
+              <label class="form-label">Preferred Fabric</label>
+              <select class="form-select">
+                <option>Mongolian Cashmere</option>
+                <option>Italian Silk</option>
+                <option>Scottish Wool</option>
+                <option>Japanese Cotton</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Desired Silhouette</label>
+              <select class="form-select">
+                <option>Classic</option>
+                <option>Contemporary</option>
+                <option>Avant-Garde</option>
+                <option>Timeless</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Occasion</label>
+              <select class="form-select">
+                <option>Formal Gala</option>
+                <option>Private Ceremony</option>
+                <option>Cultural Event</option>
+                <option>Business Affairs</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="form-submit">Request Consultation</button>
+            </div>
+          </form>
+        </div>
+        
+        <div class="bespoke-image">
+          <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?q=80&w=800&auto=format&fit=crop" alt="Bespoke Tailoring Process" class="bespoke-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Heritage Section -->
+  <section id="heritage" class="heritage">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Heritage</h2>
+        <p class="section-subtitle">A legacy of excellence spanning over a century.</p>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <div class="timeline-year">1895</div>
+            <h3 class="timeline-title">The Founding</h3>
+            <div class="timeline-image">
+              <img src="https://images.unsplash.com/photo-1596402184418-6830e6dffad3?q=80&w=600&auto=format&fit=crop" alt="Founding of Maison d'Élégance" class="timeline-img">
+            </div>
+            <p class="timeline-text">Established in Paris by master tailor Claude Élégance, creating custom garments for European aristocracy.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <div class="timeline-year">1925</div>
+            <h3 class="timeline-title">Art Deco Revolution</h3>
+            <div class="timeline-image">
+              <img src="https://images.unsplash.com/photo-1605289355680-75fb41239154?q=80&w=600&auto=format&fit=crop" alt="Art Deco Era" class="timeline-img">
+            </div>
+            <p class="timeline-text">Pioneered the integration of Art Deco elements into haute couture, revolutionizing fashion.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <div class="timeline-year">1953</div>
+            <h3 class="timeline-title">Royal Appointment</h3>
+            <div class="timeline-image">
+              <img src="https://images.unsplash.com/photo-1534129958551-082ca59b3248?q=80&w=600&auto=format&fit=crop" alt="Royal Appointment" class="timeline-img">
+            </div>
+            <p class="timeline-text">Received the prestigious Royal Warrant, becoming the official clothier to European royalty.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <div class="timeline-year">2023</div>
+            <h3 class="timeline-title">Modern Legacy</h3>
+            <div class="timeline-image">
+              <img src="https://images.unsplash.com/photo-1646596756112-385bef46eb5c?q=80&w=600&auto=format&fit=crop" alt="Modern Legacy" class="timeline-img">
+            </div>
+            <p class="timeline-text">Continuing our tradition of excellence while embracing innovative techniques and sustainable practices.</p>
+          </div>
+        </div>
+      </div>
+      
+      <a href="#" class="legacy-btn" id="legacy-video-btn">View Legacy Film</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Experience the world of Maison d'Élégance.</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-form">
+          <h3 class="contact-title">Request Information</h3>
+          <p class="contact-text">For inquiries regarding our collections or bespoke services, please complete the form below. Our client relations team will respond within 24 hours.</p>
+          
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label">Full Name</label>
+              <input type="text" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-input">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea class="form-input" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="form-submit">Submit Request</button>
+            </div>
+          </form>
+        </div>
+        
+        <div class="contact-info">
+          <h3 class="contact-title">Our Ateliers</h3>
+          <p class="contact-text">Visit one of our exclusive ateliers for a personal consultation with our master tailors.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">✉</div>
+              <div>clientele@maisonelegance.com</div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✆</div>
+              <div>+33 1 23 45 67 89</div>
+            </div>
+          </div>
+          
+          <div class="atelier-list">
+            <div class="atelier-item">
+              <h4 class="atelier-city">Paris</h4>
+              <p class="atelier-address">16 Avenue Montaigne<br>75008 Paris, France</p>
+              <p class="atelier-phone">+33 1 23 45 67 89</p>
+            </div>
+            <div class="atelier-item">
+              <h4 class="atelier-city">New York</h4>
+              <p class="atelier-address">745 Fifth Avenue<br>New York, NY 10151, USA</p>
+              <p class="atelier-phone">+1 212 555 1895</p>
+            </div>
+            <div class="atelier-item">
+              <h4 class="atelier-city">Dubai</h4>
+              <p class="atelier-address">The Boulevard, Emirates Towers<br>Dubai, UAE</p>
+              <p class="atelier-phone">+971 4 555 1895</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="footer-logo-text">Maison d'Élégance</div>
+          <p class="footer-tagline">Crafting wearable art since 1895</p>
+        </div>
+        
+        <div class="footer-links">
+          <h3 class="footer-title">Navigation</h3>
+          <ul class="footer-link-list">
+            <li><a href="#collections" class="footer-link">Collections</a></li>
+            <li><a href="#bespoke" class="footer-link">Bespoke Experience</a></li>
+            <li><a href="#heritage" class="footer-link">Heritage</a></li>
+            <li><a href="#contact" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3 class="footer-title">Legal</h3>
+          <ul class="footer-link-list">
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+            <li><a href="#" class="footer-link">Cookie Policy</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-newsletter">
+          <h3 class="footer-title">Subscribe to Our Journal</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email Address" class="newsletter-input" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+          <p class="newsletter-note">Subscribe to receive exclusive updates and invitations to private viewings.</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Maison d'Élégance. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Modal -->
+  <div class="modal" id="product-modal">
+    <div class="modal-content">
+      <button class="modal-close"></button>
+      <div class="product-showcase">
+        <div class="product-gallery">
+          <img src="https://images.unsplash.com/photo-1626557981101-aae6f84aa6ff?q=80&w=800&auto=format&fit=crop" alt="Product Image" class="product-main-img" id="main-product-img">
+          <div class="product-thumbs">
+            <img src="https://images.unsplash.com/photo-1626557981101-aae6f84aa6ff?q=80&w=200&auto=format&fit=crop" alt="Thumbnail 1" class="product-thumb active" data-img="https://images.unsplash.com/photo-1626557981101-aae6f84aa6ff?q=80&w=800&auto=format&fit=crop">
+            <img src="https://images.unsplash.com/photo-1626557977772-06aeff6137e5?q=80&w=200&auto=format&fit=crop" alt="Thumbnail 2" class="product-thumb" data-img="https://images.unsplash.com/photo-1626557977772-06aeff6137e5?q=80&w=800&auto=format&fit=crop">
+            <img src="https://images.unsplash.com/photo-1665127710057-807642be6e84?q=80&w=200&auto=format&fit=crop" alt="Thumbnail 3" class="product-thumb" data-img="https://images.unsplash.com/photo-1665127710057-807642be6e84?q=80&w=800&auto=format&fit=crop">
+          </div>
+        </div>
+        <div class="product-details">
+          <p class="product-category">Royal Heritage Collection</p>
+          <h2 class="product-title">The Sovereign Coat</h2>
+          <p class="product-description">This masterpiece is crafted from the finest Vicuña wool, hand-sourced from llamas grazing at 15,000 ft in the Andes. Each thread is individually selected for its texture and sheen, ensuring unparalleled softness and durability.</p>
+          
+          <div class="product-meta">
+            <div class="meta-item">
+              <div class="meta-label">Material</div>
+              <div class="meta-value">Vicuña Wool</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">Crafting Time</div>
+              <div class="meta-value">580 Hours</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">Origin</div>
+              <div class="meta-value">Paris Atelier</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-label">Limited Edition</div>
+              <div class="meta-value">3 of 10 Available</div>
+            </div>
+          </div>
+          
+          <div class="product-cta">
+            <a href="#" class="request-btn">Request Appointment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="video-modal">
+    <div class="video-container">
+      <button class="video-close"></button>
+      <div class="video-placeholder" style="background-color: #000; width: 100%; height: 0; padding-bottom: 56.25%; position: relative;">
+        <p style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 1.5rem;">
+          Legacy Film Video Placeholder
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden Secret Page -->
+  <div id="secret-page">
+    <div class="secret-container">
+      <h2 style="color: var(--gold); font-size: 3rem; margin-bottom: 2rem;">The Diamond Encrusted Overcoat</h2>
+      <p style="margin-bottom: 2rem; font-size: 1.2rem;">For those who demand the impossible.</p>
+      <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=800&auto=format&fit=crop" alt="Diamond Encrusted Overcoat" style="max-width: 100%; margin-bottom: 2rem;">
+      <p style="margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+        This extraordinary piece features over 2,000 ethically sourced diamonds totaling 300 carats, meticulously set into the world's finest cashmere. 
+        Created for the most discerning collectors, this is not merely a garment but a historical artifact in the making.
+      </p>
+      <p style="font-size: 1.5rem; color: var(--gold);">Price upon request</p>
+      <button style="margin-top: 2rem; padding: 1rem 3rem; background: var(--burgundy); color: #fff; border: none; cursor: pointer;" id="close-secret-page">Return</button>
+    </div>
+  </div>
+
+  <script>
+    // Wait for DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Loading Screen
+      setTimeout(function() {
+        document.querySelector('.loading-screen').classList.add('hidden');
+        document.querySelector('.nav-container').classList.add('visible');
+      }, 3000);
+
+      // Custom Cursor
+      const cursor = document.querySelector('.cursor');
+      const cursorTrail = document.querySelector('.cursor-trail');
+      
+      document.addEventListener('mousemove', function(e) {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+        
+        setTimeout(function() {
+          cursorTrail.style.left = e.clientX + 'px';
+          cursorTrail.style.top = e.clientY + 'px';
+        }, 100);
+      });
+
+      // Link Hover Effect
+      const links = document.querySelectorAll('a, button');
+      links.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+          cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+          cursorTrail.style.width = '0px';
+          cursorTrail.style.height = '0px';
+        });
+        
+        link.addEventListener('mouseleave', () => {
+          cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+          cursorTrail.style.width = '6px';
+          cursorTrail.style.height = '6px';
+        });
+      });
+
+      // Navigation Scroll Effect
+      let lastScrollTop = 0;
+      window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+        const navContainer = document.querySelector('.nav-container');
+        
+        if (currentScroll > lastScrollTop) {
+          // Scrolling down
+          navContainer.classList.remove('visible');
+        } else {
+          // Scrolling up
+          navContainer.classList.add('visible');
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      }, false);
+
+      // Product Modal
+      const productModal = document.getElementById('product-modal');
+      const productModalClose = productModal.querySelector('.modal-close');
+      const viewButtons = document.querySelectorAll('.view-btn');
+      
+      viewButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          productModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+      
+      productModalClose.addEventListener('click', function() {
+        productModal.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+
+      // Product Thumbnails
+      const productThumbs = document.querySelectorAll('.product-thumb');
+      const mainProductImg = document.getElementById('main-product-img');
+      
+      productThumbs.forEach(thumb => {
+        thumb.addEventListener('click', function() {
+          const imgSrc = this.getAttribute('data-img');
+          mainProductImg.src = imgSrc;
+          
+          productThumbs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
+
+      // Video Modal
+      const videoModal = document.getElementById('video-modal');
+      const videoModalClose = videoModal.querySelector('.video-close');
+      const legacyBtn = document.getElementById('legacy-video-btn');
+      
+      legacyBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        videoModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+      
+      videoModalClose.addEventListener('click', function() {
+        videoModal.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+
+      // Secret Page Easter Egg
+      let secretCode = '';
+      const targetCode = 'ELEGANCE1895';
+      
+      document.addEventListener('keydown', function(e) {
+        secretCode += e.key.toUpperCase();
+        
+        if (secretCode.length > targetCode.length) {
+          secretCode = secretCode.substring(1);
+        }
+        
+        if (secretCode === targetCode) {
+          document.getElementById('secret-page').classList.add('active');
+          document.body.style.overflow = 'hidden';
+          secretCode = '';
+        }
+      });
+      
+      document.getElementById('close-secret-page').addEventListener('click', function() {
+        document.getElementById('secret-page').classList.remove('active');
+        document.body.style.overflow = '';
+      });
+
+      // Smooth Scrolling for Anchor Links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          
+          if (href !== '#') {
+            e.preventDefault();
+            
+            const targetElement = document.querySelector(href);
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+              });
+            }
+          }
+        });
+      });
+
+      // Form Submissions
+      const forms = document.querySelectorAll('form');
+      forms.forEach(form => {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Thank you for your submission. Our client relations team will contact you shortly.');
+          form.reset();
+        });
+      });
+    });
+  </script>
+</body>
+</html>
